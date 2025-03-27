@@ -1,0 +1,49 @@
+2.-¿Se puede ejecutar la clase Circulo.Java?
+	No se puede ejecutar la clase Circulo debido a que no contiene el metodo main 		que si contiene Laboratorio.Java lo que es necesario para ejecutar la clase.
+
+3.- ¿Que pasos en común debe realizar para ejecutar cada uno de los ejercicios? Describir conceptos del paradigma orientada a objetos.
+	Para ejecutar los ejercicios fueron necesario --instaciar-- los objetos, para c1 	y c2 que son instancias de Circulo, utilizando los --constructores-- que son 	metodos que inicializan los objetos cuando los creamos. Han sido de utilidad los 	metodos --setters y getters-- para modificar o retornar la información de los 	atributos. Por último hemos hecho uso de Polimorfismo que es el principio que 	permite sobrecargar metodos, esto lo hemos utilizado en el Constructor para que 	soporte nuevos argumentos o parametros.
+4.
+a. ¿Qué es el constructor y para qué sirve?
+	El constructor es un metodo que sirve para la inicialización de objetos al 		momento de crearlos, este metodo les asigna los valores iniciales a los 		atributos de la clase.
+
+b. ¿Con qué método recupero el radio del círculo?
+	El metodo getRadio(), que lo generé con el Alt + Insert gracias al IDE que es el 	encargado de recuperar el valor del radio.
+
+c. ¿Por qué los atributos son privados y los métodos son públicos?
+	Los atributos son declarados privados generalmente para proteger la información 		y evitar cambios directos fuera de la clase. Mientras que los métodos son 			públicos para que cualquiera pueda acceder a ellos con algo más de control, 			puedo que no son libres de seguir instrucciones, en otras palabras, para que no 		se pueda acceder de forma segura y controlada a los atributos o información.
+
+d. ¿Qué pasa si accedes directamente a los atributos del círculo desde el método 
+main()?
+	Genera un error de compilación debido a que no se puede acceder al haber 			declarado los atributos como private. Haciendo que no se pueda acceder desde 			fuera de la clase.
+
+e. ¿Qué pasa si modificas directamente el atributo área del círculo desde el método 
+main()
+	Aunque las instrucciones del principio de creación de la clase circulo no 			especificaban que el area es un atributo del circulo, en caso que se haya 			colocado como atributo y sea declarado como public, podría ser cambiado 			directamente desde fuera de la clase. En caso de que fuera declarado como 			private generaria un error de compilación como si cambiara el radio del circulo.
+
+f. En la clase “CirculoTest.java”, ejecuta la siguiente instrucción: 
+System.out.println(c1.radio), donde c1 es una instancia del objeto Círculo. ¿Qué 
+ocurrió? Explique el mensaje de error.
+	El mensaje de Error es "radio has private access in Circulo" lo que nos quiere 			decir que radio es un atributo privado por lo que no puedes acceder a este desde 	fuera del a misma clase.
+
+g. En la clase “CirculoTest.java”, ejecuta la siguiente instrucción: c1.radio=42.0, donde c1 es una instancia del objeto Círculo. ¿Qué ocurrió? Explique el mensaje de error.
+	Muestra el mismo mensaje de error, aunque ahora no se trata de acceder al 			circulo, se trata de cambiar el radio del circulo. Si se quisiera cambiar el 			radio se puede utilizar el setRadio(), que es un metodo que puede generar la 			misma IDE con el Insert y que esta implementada en el codigo fuente.
+	
+h. ¿Con qué método modificas el valor de un atributo de la clase “Circulo.java”?
+	Con el método que mencione anteriormente llamados "setters" que son metodos que 		permiten obtener o modificar los valores del as variables de una clase.
+
+i. Crear un objeto de tipo Círculo y modifica los valores por defecto. 
+	Esta respuesta se encuentra en el codigo fuente con el comentario  '4.i' 
+
+j. ¿Para qué sirve la palabra reservada “this”? Modifique el constructor con 
+argumentos (radio y color) y utiliza “this” y métodos setters en la clase 
+“Circulo.java”.
+	'this' es una palabra reservada que hace referencia al objeto actual de la 			clase. Las modificaciones en el constructor, argumentos y metodos estan 			implementadas en el codigo fuente.
+
+k. ¿Para qué sirve el método toString()?
+	El metodo toString() sirve para convertir los atributos de un objeto a texto, 			entonces es util para imprimir la información del objeto con el que se esta 			trabajando. 
+
+l. Incluir el método toString() en la clase “Circulo.java”.
+	Esta implementado en la clase Circulo.Java bajo la etiqueta de '4.l'
+
+5. https://drive.google.com/file/d/1wQl_PphoNAbxZAy7eKhy4pDT-GWDDIoJ/view?usp=sharing
